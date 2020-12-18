@@ -1,37 +1,40 @@
-import React, { FC, Children, Ref, ReactNode } from 'react';
+import React, { FC} from 'react';
 import { addClass, verifyClass } from '../utils/';
 import { Container, ContainerMenu, Content } from './CustomMenu.styled';
 
+export interface CustomObjectProps {
+  onMouseOver: MouseEvent;
+  customFunction: () => void;
+  id: string;
+  text: string;
+}
+
 export interface CustomMenuProps {
-  objects: Array<object>;
+  objects: Record<string, CustomObjectProps>;
   typeMenu: string;
   text: string;
 }
 
-const containerLi = React.createRef<HTMLDivElement>();
-const handleClick = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+const containerLi = React.createRef();
+const handleClick = (e: () => void, index: number) => {
   changeClass(e, index, 'selected');
 };
 
-const handleOver = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+const handleOver = (e: () => void, index: number) => {
   changeClass(e, index, 'hover');
 };
 
-const changeClass = (
-  e: React.ChangeEvent<HTMLInputElement>,
-  index: number,
-  classChange: string
-) => {
-  const containerLiCurrent = containerLi.current;
+const changeClass = (e: () => void, index: number, classChange: string) => {
+  const containerLiCurrent = containerLi.current.;
   const el = document.getElementById(`ele${index}`);
 
   verifyClass(containerLiCurrent.childNodes, classChange);
 
   addClass(el, classChange);
-  if (typeof e === 'function') e:();
+  if (typeof e === 'function') e();
 };
 
-const CustomMenu: FC<CustomMenuProps> = ({ objects, typeMenu }) => {
+const CustomMenu: FC<CustomMenuProps> = ({ objects }) => {
   return (
     <Container>
       <ContainerMenu>
@@ -42,12 +45,11 @@ const CustomMenu: FC<CustomMenuProps> = ({ objects, typeMenu }) => {
                 <li
                   key={i}
                   id={`ele${i}`}
-                  onMouseOver={(e:React.ChangeEvent<HTMLInputElement>, index: number) =>
+                  onMouseOver={(e: MouseEvent, index: number) =>
                     handleOver(e, index)
                   }
                   ref={containerLi}
-                  onClick={(e: undefined, index: number) =>
-                    handleClick(cI.customFunction, i)
+                  onClick={(index: number) =>handleClick(cI.customFunction, index)
                   }
                 >
                   <span>{cI.text}</span>
