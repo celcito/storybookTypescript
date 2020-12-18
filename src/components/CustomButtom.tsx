@@ -1,15 +1,25 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import '../App.css';
 
 export interface CustomButtomProps {
-  icon?: ReactNode;
+  icon?: string;
   onClick: () => void;
   text?: string;
   typeButtom?: string;
-  alt?: string;
 }
 
+export interface customTypeProps {
+  background: string;
+  borderRadius: string;
+  fontSize: string;
+  color: string;
+  border: string;
+  opacity: string;
+  font: string;
+  backgroundActive: string;
+}
+//Todo Create palete
 const primary = '#2699FB'; //também fonte color atendimento
 const white = '#fff';
 const danger = '#FF2424';
@@ -19,17 +29,19 @@ const light = '#F1F4F6';
 const info = '#2699FB';
 const green = '#33AC2E';
 const fontColorPrymaryLight = '#6B7786';
-
 const defaultBorderRadius = '4px';
 const roundedBorderRadius = '50px';
 
-const customType: any = {
+const customType: Record<string, customTypeProps> = {
   primary: {
     background: primary,
     borderRadius: defaultBorderRadius,
     fontSize: '14px',
     color: '#FFFFFF',
     border: 'none',
+    opacity: '1',
+    font: 'normal normal medium 14px/22px Rubik',
+    backgroundActive: '',
   },
 
   primaryHighlight: {
@@ -39,6 +51,8 @@ const customType: any = {
     color: light,
     border: `solid 1px ${primary}`,
     opacity: '0.8',
+    font: 'normal normal medium 14px/22px Rubik',
+    backgroundActive: '',
   },
 
   dangerHighlight: {
@@ -48,15 +62,18 @@ const customType: any = {
     color: danger,
     border: `solid 1px ${danger}`,
     opacity: '0.8',
+    font: 'normal normal medium 14px/22px Rubik',
+    backgroundActive: '',
   },
-
   danger: {
     background: danger,
     fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: '#FFFFFF',
     border: 'none',
+    opacity: '1',
     borderRadius: defaultBorderRadius,
+    backgroundActive: '',
   },
 
   dangerRounded: {
@@ -66,6 +83,8 @@ const customType: any = {
     color: white,
     border: 'none',
     borderRadius: roundedBorderRadius,
+    opacity: '1',
+    backgroundActive: '',
   },
   onHold: {
     background: onHold,
@@ -74,6 +93,8 @@ const customType: any = {
     color: white,
     border: 'none',
     borderRadius: roundedBorderRadius,
+    opacity: '1',
+    backgroundActive: '',
   },
 
   hardOnHold: {
@@ -83,6 +104,8 @@ const customType: any = {
     color: white,
     border: 'none',
     borderRadius: roundedBorderRadius,
+    opacity: '1',
+    backgroundActive: '',
   },
 
   lightRounded: {
@@ -92,6 +115,8 @@ const customType: any = {
     color: fontColorPrymaryLight,
     border: 'none',
     borderRadius: roundedBorderRadius,
+    opacity: '1',
+    backgroundActive: '',
   },
 
   light: {
@@ -101,6 +126,7 @@ const customType: any = {
     color: fontColorPrymaryLight,
     border: 'none',
     borderRadius: defaultBorderRadius,
+    opacity: '1',
     backgroundActive: info,
   },
 
@@ -111,6 +137,8 @@ const customType: any = {
     color: '#FFFFFF',
     border: 'none',
     borderRadius: defaultBorderRadius,
+    opacity: '1',
+    backgroundActive: '',
   },
 
   info: {
@@ -119,7 +147,9 @@ const customType: any = {
     font: 'normal normal medium 14px/22px Rubik',
     color: '#FFFFFF',
     border: 'none',
+    opacity: '1',
     borderRadius: roundedBorderRadius,
+    backgroundActive: '',
   },
 };
 
@@ -164,12 +194,11 @@ const Container = styled.div`
 const CustomButtom: FC<CustomButtomProps> = ({
   typeButtom = 'primary',
   onClick,
-  alt,
   icon,
   text,
 }: CustomButtomProps) => {
   return (
-    <Button typeButtom={typeButtom} onClick={onClick} alt={alt}>
+    <Button typeButtom={typeButtom} onClick={onClick}>
       <Container>
         {icon} <span> {text} </span>
       </Container>
