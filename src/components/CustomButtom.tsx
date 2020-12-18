@@ -23,7 +23,7 @@ const fontColorPrymaryLight = '#6B7786';
 const defaultBorderRadius = '4px';
 const roundedBorderRadius = '50px';
 
-const customType: Record<string, unknown> = {
+const customType: any = {
   primary: {
     background: primary,
     borderRadius: defaultBorderRadius,
