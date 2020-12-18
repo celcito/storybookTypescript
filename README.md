@@ -4,15 +4,30 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+
+Clone and run 
+### `yarn`
+
 In the project directory, you can run:
 
 ### `yarn start`
 
+Obs this projects is empty run yarn storybook
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+
+In the project directory, you can run storybook:
+
+### `yarn storybook `
+
+Runs the app in the development mode.\
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+
 
 ### `yarn test`
 
