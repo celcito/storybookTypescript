@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import '../App.css';
-
 export interface CustomButtomProps {
   icon?: string;
   onClick: () => void;
@@ -153,21 +152,16 @@ const customType: Record<string, customTypeProps> = {
   },
 };
 
-const Button = styled.button`
-  font-size: ${(props: { typeButtom: string }) =>
-    customType[props.typeButtom].fontSize};
+const Button = styled.button<{ typeButtom: string }>`
+  font-size: ${(props) => customType[props.typeButtom].fontSize};
   min-width: 80px;
   margin: 1em;
   padding: 0.25em 1em;
   cursor: pointer;
-  background: ${(props: { typeButtom: string }) =>
-    customType[props.typeButtom].background};
-  border: ${(props: { typeButtom: string }) =>
-    customType[props.typeButtom].border};
-  border-radius: ${(props: { typeButtom: string }) =>
-    customType[props.typeButtom].borderRadius};
-  color: ${(props: { typeButtom: string }) =>
-    customType[props.typeButtom].color};
+  background: ${(props) => customType[props.typeButtom].background};
+  border: ${(props) => customType[props.typeButtom].border};
+  border-radius: ${(props) => customType[props.typeButtom].borderRadius};
+  color: ${(props) => customType[props.typeButtom].color};
   min-height: 30px;
 
   &:hover {
@@ -175,8 +169,7 @@ const Button = styled.button`
   }
 
   &:active {
-    background: ${(props: { typeButtom: string }) =>
-      customType[props.typeButtom].backgroundActive};
+    background: ${(props) => customType[props.typeButtom].backgroundActive};
   }
   &focus {
     outline: none;

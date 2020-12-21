@@ -1,35 +1,38 @@
-import React, { FC} from 'react';
-import { addClass, verifyClass } from '../utils/';
+import React, { FC, createRef } from 'react';
+import { addClass, verifyClass } from '../utils';
 import { Container, ContainerMenu, Content } from './CustomMenu.styled';
 
-export interface CustomObjectProps {
-  onMouseOver: MouseEvent;
-  customFunction: () => void;
-  id: string;
-  text: string;
-}
-
 export interface CustomMenuProps {
-  objects: Record<string, CustomObjectProps>;
+  objects: Array<CustomObjectsProps>;
   typeMenu: string;
   text: string;
 }
+export interface CustomObjectsProps {
+  icon: string;
+  text: string;
+  customFunction: () => void;
+  onMouseOver: () => void;
+  onClick: () => void;
+  component: FC;
+}
 
-const containerLi = React.createRef();
-const handleClick = (e: () => void, index: number) => {
+const containerUl = createRef<HTMLUListElement>();
+const handleClick = (e: MouseEvent, index: number) => {
   changeClass(e, index, 'selected');
 };
 
-const handleOver = (e: () => void, index: number) => {
+const handleOver = (e: MouseEvent, index: number) => {
   changeClass(e, index, 'hover');
+  console.log(typeof index);
+  console.log(index);
 };
 
-const changeClass = (e: () => void, index: number, classChange: string) => {
-  const containerLiCurrent = containerLi.current.;
+const changeClass = (e: MouseEvent, index: number, classChange: string) => {
+  const containerUlCurrent = containerUl.current;
+  const childNodes = containerUlCurrent.childNodes;
   const el = document.getElementById(`ele${index}`);
 
-  verifyClass(containerLiCurrent.childNodes, classChange);
-
+  verifyClass(childNodes, classChange);
   addClass(el, classChange);
   if (typeof e === 'function') e();
 };
@@ -39,17 +42,17 @@ const CustomMenu: FC<CustomMenuProps> = ({ objects }) => {
     <Container>
       <ContainerMenu>
         <nav>
-          <ul ref={containerLi}>
+          <ul ref={containerUl}>
             {objects.map((cI, i) => {
               return (
                 <li
                   key={i}
                   id={`ele${i}`}
                   onMouseOver={(e: MouseEvent, index: number) =>
-                    handleOver(e, index)
+                    handleOver(e, i)
                   }
-                  ref={containerLi}
-                  onClick={(index: number) =>handleClick(cI.customFunction, index)
+                  onClick={(e: MouseEvent, index: number) =>
+                    handleClick(cI.customFunction, i)
                   }
                 >
                   <span>{cI.text}</span>
@@ -60,14 +63,12 @@ const CustomMenu: FC<CustomMenuProps> = ({ objects }) => {
         </nav>
       </ContainerMenu>
       <Content>
-        {/* {props.children} */}
-        {Children}
         {/* {objects.map((cI, i) => {
-                            return (
-                                <cI.component/>
-                            )
-                            })
-                        }  */}
+        return (
+        <cI.component/>
+        )
+        })
+        */}
       </Content>
     </Container>
   );

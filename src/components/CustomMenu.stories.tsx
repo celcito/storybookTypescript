@@ -1,17 +1,9 @@
 import React, { FC } from 'react';
-import CustomMenu from './CustomMenu';
+import CustomMenu, { CustomObjectsProps } from './CustomMenu';
 import { Story, Meta } from '@storybook/react/types-6-0';
 const Todas: FC = () => <div> teste </div>;
 
-export interface customObjectsProps {
-  icon: string;
-  text: string;
-  customFunction: () => void;
-  onClick: () => void;
-  component: FC;
-}
-
-const objects: Array<customObjectsProps> = [
+const objects: Array<CustomObjectsProps> = [
   {
     icon: '',
     text: 'Todas',
@@ -88,7 +80,7 @@ export default {
 
 export interface customMenuProps {
   typeMenu: string;
-  objects: Array<customObjectsProps>;
+  objects: Array<CustomObjectsProps>;
   onClick: () => void;
   text: string;
 }
