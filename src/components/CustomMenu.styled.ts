@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import { customDropShadow } from '../assets/styles/mixins';
+
 export const fontFamily = "'Rubik', sans-serif";
 
-//todo -webkit-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.36);
-//make function like a mixim sass
 export const Container = styled.div`
   display: flex;
   width: 900px;
@@ -13,12 +13,9 @@ export const ContainerMenu = styled.div`
   height: 250px;
   display: flex;
   background: #fff;
-
-  -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.36);
-  box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.36);
   font-family: 'rubikregular', sans-serif;
 
+  ${customDropShadow('1px 4px 11px 6px #c2c2c2')}
   ul {
     margin: 0;
     padding-top: 10px;

@@ -1,13 +1,10 @@
 import styled, { css } from 'styled-components';
+import { customDropShadow } from '../assets/styles/mixins';
 
 export const Container = styled.div<{ menuIsOpen: boolean }>`
-
-    -webkit-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.36);
-    -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.36);
-    box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.36);
-
+  
+${customDropShadow('1px 4px 11px 6px #c2c2c2')}
     height: 1000px;
-
     ${(props) =>
       !props.menuIsOpen &&
       css`
@@ -25,6 +22,11 @@ export const Container = styled.div<{ menuIsOpen: boolean }>`
       `};
    
     width:82px;
+
+
+
+
+
     justify-content: center;
     align-items: center;    
     }ul li {
