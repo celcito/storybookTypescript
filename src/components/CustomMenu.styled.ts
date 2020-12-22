@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 export const fontFamily = "'Rubik', sans-serif";
 
+//todo -webkit-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.36);
+//make function like a mixim sass
 export const Container = styled.div`
   display: flex;
   width: 900px;
