@@ -19,11 +19,11 @@ export const Primary = Template.bind({});
 Primary.args = {
   typeButtom: 'primary',
   text: 'Primary',
-  size: 'medium',
+  size: 'large',
   onClick: () => {
-    console.log('dsad');
+    // console.log('dsad');
   },
-  icon: <img src={Plus} alt="Icon Plus" />,
+  icon: <img src={Video} alt="Icon Plus" />,
 };
 
 export const Danger = Template.bind({});

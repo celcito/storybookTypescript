@@ -12,7 +12,6 @@ export interface CustomButtomProps {
 export interface customTypeProps {
   background: string;
   borderRadius: string;
-  fontSize: string;
   color: string;
   border: string;
   opacity?: string;
@@ -40,15 +39,14 @@ export interface customButtomSize {
 }
 const buttonSize: Record<string, string> = {
   small: '2px 6px',
-  medium: '6px 15px',
-  large: '10px 30px',
+  medium: '4px 14px',
+  large: '8px 25px',
 };
 
 const customType: Record<string, customTypeProps> = {
   primary: {
     background: primary,
     borderRadius: defaultBorderRadius,
-    fontSize: '14px',
     color: '#FFFFFF',
     border: 'none',
     opacity: '1',
@@ -59,7 +57,6 @@ const customType: Record<string, customTypeProps> = {
   primaryHighlight: {
     background: '#FFF',
     borderRadius: defaultBorderRadius,
-    fontSize: '14px',
     color: light,
     border: `solid 1px ${primary}`,
     opacity: '0.8',
@@ -70,7 +67,6 @@ const customType: Record<string, customTypeProps> = {
   dangerHighlight: {
     background: '#FFF',
     borderRadius: defaultBorderRadius,
-    fontSize: '14px',
     color: danger,
     border: `solid 1px ${danger}`,
     opacity: '0.8',
@@ -79,7 +75,6 @@ const customType: Record<string, customTypeProps> = {
   },
   danger: {
     background: danger,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: '#FFFFFF',
     border: 'none',
@@ -90,7 +85,6 @@ const customType: Record<string, customTypeProps> = {
 
   dangerRounded: {
     background: danger,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: white,
     border: 'none',
@@ -100,7 +94,6 @@ const customType: Record<string, customTypeProps> = {
   },
   onHold: {
     background: onHold,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: white,
     border: 'none',
@@ -111,7 +104,6 @@ const customType: Record<string, customTypeProps> = {
 
   hardOnHold: {
     background: hardOnHold,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: white,
     border: 'none',
@@ -122,7 +114,6 @@ const customType: Record<string, customTypeProps> = {
 
   lightRounded: {
     background: white,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: fontColorPrymaryLight,
     border: 'none',
@@ -133,7 +124,6 @@ const customType: Record<string, customTypeProps> = {
 
   light: {
     background: white,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: fontColorPrymaryLight,
     border: 'none',
@@ -144,7 +134,6 @@ const customType: Record<string, customTypeProps> = {
 
   green: {
     background: green,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: '#FFFFFF',
     border: 'none',
@@ -155,7 +144,6 @@ const customType: Record<string, customTypeProps> = {
 
   info: {
     background: info,
-    fontSize: '14px',
     font: 'normal normal medium 14px/22px Rubik',
     color: '#FFFFFF',
     border: 'none',
@@ -166,16 +154,18 @@ const customType: Record<string, customTypeProps> = {
 };
 
 const Button = styled.button<{ typeButtom: string; size: string }>`
-  font-size: ${(props) => customType[props.typeButtom].fontSize};
-  // padding: 0.25em 1em;
-  //padding:  ;
+  font-size: ${(props) =>
+    props.size === 'medium'
+      ? '14px'
+      : props.size === 'large'
+      ? '16px'
+      : '12px'};
   padding: ${(props) => buttonSize[props.size]};
   cursor: pointer;
   background: ${(props) => customType[props.typeButtom].background};
   border: ${(props) => customType[props.typeButtom].border};
   border-radius: ${(props) => customType[props.typeButtom].borderRadius};
   color: ${(props) => customType[props.typeButtom].color};
-  //min-height: 30px;
 
   &:hover {
     opacity: 0.9;
@@ -184,10 +174,23 @@ const Button = styled.button<{ typeButtom: string; size: string }>`
   &:active {
     background: ${(props) => customType[props.typeButtom].backgroundActive};
   }
-  &focus {
+
+  &:focus {
     outline: none;
-    border-radius: 55px;
-    border: 1px solid #fff;
+    border-radius: ${(props) => customType[props.typeButtom].borderRadius};
+    box-shadow: -1px 2px 13px 1px #2699fb;
+    font-weight: bold;
+  }
+
+  img {
+    width: ${(props) =>
+      props.size === 'medium'
+        ? '16px'
+        : props.size === 'large'
+        ? '18px'
+        : '15px'};
+
+    padding-bottom: 1px;
   }
 `;
 const Container = styled.div`
