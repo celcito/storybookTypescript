@@ -2,10 +2,11 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import '../App.css';
 export interface CustomButtomProps {
-  icon?: string;
+  icon?: HTMLImageElement;
   onClick: () => void;
   text?: string;
   typeButtom?: string;
+  size?: string;
 }
 
 export interface customTypeProps {
@@ -14,9 +15,10 @@ export interface customTypeProps {
   fontSize: string;
   color: string;
   border: string;
-  opacity: string;
+  opacity?: string;
   font: string;
-  backgroundActive: string;
+  backgroundActive?: string;
+  size?: string;
 }
 //Todo Create palete
 const primary = '#2699FB'; //também fonte color atendimento
@@ -25,11 +27,22 @@ const danger = '#FF2424';
 const hardOnHold = '#FF8721';
 const onHold = '#FFB324';
 const light = '#F1F4F6';
-const info = '#2699FB';
+const info = '#e3ebf2';
 const green = '#33AC2E';
 const fontColorPrymaryLight = '#6B7786';
 const defaultBorderRadius = '4px';
 const roundedBorderRadius = '50px';
+
+export interface customButtomSize {
+  small: string;
+  medium: string;
+  large: string;
+}
+const buttonSize: Record<string, string> = {
+  small: '2px 6px',
+  medium: '6px 15px',
+  large: '10px 30px',
+};
 
 const customType: Record<string, customTypeProps> = {
   primary: {
@@ -147,22 +160,22 @@ const customType: Record<string, customTypeProps> = {
     color: '#FFFFFF',
     border: 'none',
     opacity: '1',
-    borderRadius: roundedBorderRadius,
+    borderRadius: defaultBorderRadius,
     backgroundActive: '',
   },
 };
 
-const Button = styled.button<{ typeButtom: string }>`
+const Button = styled.button<{ typeButtom: string; size: string }>`
   font-size: ${(props) => customType[props.typeButtom].fontSize};
-  min-width: 80px;
-  margin: 1em;
-  padding: 0.25em 1em;
+  // padding: 0.25em 1em;
+  //padding:  ;
+  padding: ${(props) => buttonSize[props.size]};
   cursor: pointer;
   background: ${(props) => customType[props.typeButtom].background};
   border: ${(props) => customType[props.typeButtom].border};
   border-radius: ${(props) => customType[props.typeButtom].borderRadius};
   color: ${(props) => customType[props.typeButtom].color};
-  min-height: 30px;
+  //min-height: 30px;
 
   &:hover {
     opacity: 0.9;
@@ -188,10 +201,11 @@ const CustomButtom: FC<CustomButtomProps> = ({
   typeButtom = 'primary',
   onClick,
   icon,
+  size = 'small',
   text,
 }: CustomButtomProps) => {
   return (
-    <Button typeButtom={typeButtom} onClick={onClick}>
+    <Button typeButtom={typeButtom} size={size} onClick={onClick}>
       <Container>
         {icon} <span> {text} </span>
       </Container>
