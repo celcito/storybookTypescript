@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots CustomButtom Danger 1`] = `
+<button
+  className="sc-bdfBwQ iFnLRh"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      danger
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Danger Highlight 1`] = `
+<button
+  className="sc-bdfBwQ ktXTGi"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Danger Rounded 1`] = `
+<button
+  className="sc-bdfBwQ dbXrXa"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Green 1`] = `
+<button
+  className="sc-bdfBwQ jZyzTY"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+    <img
+      alt="Icon Video"
+      src="video.svg"
+    />
+     
+    <span>
+       
+      video conferencia
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Hard On Hold 1`] = `
+<button
+  className="sc-bdfBwQ mHAW"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Light 1`] = `
+<button
+  className="sc-bdfBwQ kLFMDi"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Light Rounded 1`] = `
+<button
+  className="sc-bdfBwQ kzdNjA"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom On Hold 1`] = `
+<button
+  className="sc-bdfBwQ dKLdlh"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Primary 1`] = `
+<button
+  className="sc-bdfBwQ hCAudx"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+    <img
+      alt="Icon Plus"
+      src="plus.svg"
+    />
+     
+    <span>
+       
+      Primary
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Primary Highlight 1`] = `
+<button
+  className="sc-bdfBwQ gTVDBb"
+  onClick={[Function]}
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomMenu Horizontal 1`] = `
+<div
+  className="sc-dlfnbm fmQbiS"
+>
+  <div
+    className="sc-hKgILt bPiKPM"
+  >
+    <nav>
+      <ul>
+        <li
+          id="ele0"
+          onClick={[Function]}
+          onMouseOver={[Function]}
+        >
+          <span>
+            Todas
+          </span>
+        </li>
+        <li
+          id="ele1"
+          onClick={[Function]}
+          onMouseOver={[Function]}
+        >
+          <span>
+            Pa Virtual
+          </span>
+        </li>
+        <li
+          id="ele2"
+          onClick={[Function]}
+          onMouseOver={[Function]}
+        >
+          <span>
+            Premium
+          </span>
+        </li>
+        <li
+          id="ele3"
+          onClick={[Function]}
+          onMouseOver={[Function]}
+        >
+          <span>
+            Teletriagem
+          </span>
+        </li>
+        <li
+          id="ele4"
+          onClick={[Function]}
+          onMouseOver={[Function]}
+        >
+          <span>
+            Hematologia
+          </span>
+        </li>
+        <li
+          id="ele5"
+          onClick={[Function]}
+          onMouseOver={[Function]}
+        >
+          <span>
+            COVID-19
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <section
+    className="sc-eCssSg kfUUyx"
+  />
+</div>
+`;
+
+exports[`Storyshots DefaultMenu Vertical 1`] = `
+Array [
+  <div
+    className="sc-gKsewC htBvqv"
+    id="hamburguer"
+    onClick={[Function]}
+  >
+    <img
+      alt="Menu hamburguer"
+      src="menu-hamburguer.png"
+    />
+  </div>,
+  <div
+    className="sc-jSgupP eLWSzH"
+    id="menu"
+  >
+    <div
+      className="default-logo"
+    >
+      <img
+        alt="Logo Einsten"
+        src="logo-einsten.svg"
+      />
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="/home"
+            onClick={[Function]}
+          >
+            <svg
+              onClick={[Function]}
+            >
+              acionamentos.svg
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/home"
+            onClick={[Function]}
+          >
+            <svg
+              onClick={[Function]}
+            >
+              agendamentos.svg
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/home"
+            onClick={[Function]}
+          >
+            <svg
+              onClick={[Function]}
+            >
+              hitstorico.svg
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/home"
+            onClick={[Function]}
+          >
+            <svg
+              onClick={[Function]}
+            >
+              support.svg
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/home"
+            onClick={[Function]}
+          >
+            <svg
+              onClick={[Function]}
+            >
+              activity.svg
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <svg
+              onClick={[Function]}
+            >
+              gerenciar_cancelamentos.svg
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>,
+]
+`;

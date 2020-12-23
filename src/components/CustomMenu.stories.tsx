@@ -81,7 +81,7 @@ export default {
 export interface customMenuProps {
   typeMenu: string;
   objects: Array<CustomObjectsProps>;
-  onClick: () => void;
+  onClick?: () => void;
   text: string;
 }
 

@@ -11,7 +11,7 @@ export interface CustomObjectsProps {
   icon: string;
   text: string;
   customFunction: () => void;
-  onMouseOver: () => void;
+  onMouseOver?: () => void;
   onClick: () => void;
   component: FC;
 }
@@ -48,12 +48,8 @@ const CustomMenu: FC<CustomMenuProps> = ({ objects }) => {
                 <li
                   key={i}
                   id={`ele${i}`}
-                  onMouseOver={(e: MouseEvent, index: number) =>
-                    handleOver(e, i)
-                  }
-                  onClick={(e: MouseEvent, index: number) =>
-                    handleClick(cI.customFunction, i)
-                  }
+                  onMouseOver={(e: MouseEvent) => handleOver(e, i)}
+                  onClick={() => handleClick(cI.customFunction, i)}
                 >
                   <span>{cI.text}</span>
                 </li>

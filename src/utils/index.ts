@@ -1,22 +1,14 @@
-export const addClass = (el: HTMLElement, classToAdd: string) =>
+export const addClass = (el: HTMLElement, classToAdd: string): void =>
   el.classList.add(classToAdd);
-export const hasClass = (el: HTMLElement, classTocheck: string) =>
+export const hasClass = (el: HTMLElement, classTocheck: string): boolean =>
   el.classList.contains(classTocheck);
-export const removeClass = (el: HTMLElement, classToRemove: string) =>
+export const removeClass = (el: HTMLElement, classToRemove: string): void =>
   el.classList.remove(classToRemove);
-export const verifyClass = (els: Array<HTMLElement>, classTocheck: string) => {
+export const verifyClass = (
+  els: Array<HTMLElement>,
+  classTocheck: string
+): void => {
   els.forEach((el) => {
     if (hasClass(el, classTocheck)) removeClass(el, classTocheck);
   });
 };
-
-export function debounce(fn: () => void, ms: number, ...rest: any) {
-  let timer: any;
-  return () => {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      timer = null;
-      fn.apply(this, rest);
-    }, ms);
-  };
-}
