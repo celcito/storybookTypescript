@@ -1,7 +1,12 @@
 import React, { FC } from 'react';
 import CustomMenu, { CustomObjectsProps } from './CustomMenu';
 import { Story, Meta } from '@storybook/react/types-6-0';
-const Todas: FC = () => <div> teste </div>;
+const Home: FC = () => <div> teste0 </div>;
+const Uma: FC = () => <div> teste1 </div>;
+const Duas: FC = () => <div> teste2 </div>;
+const Tres: FC = () => <div> teste3 </div>;
+const Quatro: FC = () => <div> teste4 </div>;
+const Cinco: FC = () => <div> teste5 </div>;
 
 const objects: Array<CustomObjectsProps> = [
   {
@@ -11,7 +16,7 @@ const objects: Array<CustomObjectsProps> = [
     onClick: () => {
       console.log('Clicklll');
     },
-    component: Todas,
+    component: Home,
   },
   {
     icon: '',
@@ -22,7 +27,7 @@ const objects: Array<CustomObjectsProps> = [
     onClick: () => {
       console.log('Clicklll');
     },
-    component: Todas,
+    component: Uma,
   },
 
   {
@@ -34,7 +39,7 @@ const objects: Array<CustomObjectsProps> = [
     onClick: () => {
       console.log('Clicklll');
     },
-    component: Todas,
+    component: Duas,
   },
 
   {
@@ -46,7 +51,7 @@ const objects: Array<CustomObjectsProps> = [
     onClick: () => {
       console.log('Clicklll');
     },
-    component: Todas,
+    component: Tres,
   },
 
   {
@@ -58,7 +63,7 @@ const objects: Array<CustomObjectsProps> = [
     onClick: () => {
       console.log('Clicklll');
     },
-    component: Todas,
+    component: Quatro,
   },
   {
     icon: '',
@@ -69,7 +74,7 @@ const objects: Array<CustomObjectsProps> = [
     onClick: () => {
       console.log('Clicklll');
     },
-    component: Todas,
+    component: Cinco,
   },
 ];
 

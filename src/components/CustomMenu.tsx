@@ -1,4 +1,4 @@
-import React, { FC, createRef } from 'react';
+import React, { FC, createRef, useState } from 'react';
 import { addClass, verifyClass } from '../utils';
 import { Container, ContainerMenu, Content } from './CustomMenu.styled';
 
@@ -17,20 +17,20 @@ export interface CustomObjectsProps {
 }
 
 const containerUl = createRef<HTMLUListElement>();
-const handleClick = (e: MouseEvent, index: number) => {
+const handleClick = (e: any, index: number) => {
   changeClass(e, index, 'selected');
 };
 
-const handleOver = (e: MouseEvent, index: number) => {
+const handleOver = (e: any, index: number) => {
   changeClass(e, index, 'hover');
   console.log(typeof index);
   console.log(index);
 };
 
-const changeClass = (e: MouseEvent, index: number, classChange: string) => {
+const changeClass = (e: any, index: number, classChange: string) => {
   const containerUlCurrent = containerUl.current;
-  const childNodes = containerUlCurrent.childNodes;
-  const el = document.getElementById(`ele${index}`);
+  const childNodes: any = containerUlCurrent?.childNodes;
+  const el: any = document.getElementById(`ele${index}`);
 
   verifyClass(childNodes, classChange);
   addClass(el, classChange);
@@ -38,6 +38,8 @@ const changeClass = (e: MouseEvent, index: number, classChange: string) => {
 };
 
 const CustomMenu: FC<CustomMenuProps> = ({ objects }) => {
+  const [index, setIndex] = useState(0);
+  const ObjectChildren: FC = objects[index].component;
   return (
     <Container>
       <ContainerMenu>
@@ -48,8 +50,11 @@ const CustomMenu: FC<CustomMenuProps> = ({ objects }) => {
                 <li
                   key={i}
                   id={`ele${i}`}
-                  onMouseOver={(e: MouseEvent) => handleOver(e, i)}
-                  onClick={() => handleClick(cI.customFunction, i)}
+                  onMouseOver={(e: any) => handleOver(e, i)}
+                  onClick={() => {
+                    handleClick(cI.customFunction, i);
+                    setIndex(i);
+                  }}
                 >
                   <span>{cI.text}</span>
                 </li>
@@ -58,14 +63,7 @@ const CustomMenu: FC<CustomMenuProps> = ({ objects }) => {
           </ul>
         </nav>
       </ContainerMenu>
-      <Content>
-        {/* {objects.map((cI, i) => {
-        return (
-        <cI.component/>
-        )
-        })
-        */}
-      </Content>
+      <Content>{<ObjectChildren />}</Content>
     </Container>
   );
 };
