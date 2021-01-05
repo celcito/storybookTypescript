@@ -22,11 +22,6 @@ ${customDropShadow('1px 4px 11px 6px #c2c2c2')}
       `};
    
     width:82px;
-
-
-
-
-
     justify-content: center;
     align-items: center;    
     }ul li {
@@ -87,4 +82,8 @@ export const ContainerHamburguer = styled.div<{ menuIsOpen: boolean }>`
   @media (max-width: 601px) {
     display: block;
   }
+`;
+export const Content = styled.section`
+  background: aliceblue;
+  margin-left: 30px;
 `;

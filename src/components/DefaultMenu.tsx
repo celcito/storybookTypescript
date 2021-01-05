@@ -1,6 +1,6 @@
 import React, { useState, useEffect, FC, createRef } from 'react';
 import '../App.css';
-import { Container, ContainerHamburguer } from './DefaultMenu.styled';
+import { Container, ContainerHamburguer, Content } from './DefaultMenu.styled';
 import { BrowserRouter, Link } from 'react-router-dom';
 //import { uuid } from 'uuidv4';
 import Logo from '../assets/icons/logo-einsten.svg';
@@ -54,34 +54,38 @@ const DefaultMenu: FC<DefaultObjectsProps> = ({ objects }) => {
       >
         <img src={Menu} alt="Menu hamburguer" />
       </ContainerHamburguer>
-      <Container menuIsOpen={menuIsOpen} id="menu">
-        <div className="default-logo">
-          <img src={Logo} alt="Logo Einsten" />
-        </div>
-        <BrowserRouter>
-          <nav>
-            <ul ref={containerIcon}>
-              {objects.map((el, i) => {
-                return (
-                  <>
-                    <li>
-                      <Link key={i} to={el.path}>
-                        <el.icon
-                          key={i}
-                          ref={refIcon}
-                          onClick={(e: MouseEvent) => {
-                            handleClick(e);
-                          }}
-                        />
-                      </Link>
-                    </li>
-                  </>
-                );
-              })}
-            </ul>
-          </nav>
-        </BrowserRouter>
-      </Container>
+      <div style={{ display: 'flex' }}>
+        <Container menuIsOpen={menuIsOpen} id="menu">
+          <div className="default-logo">
+            <img src={Logo} alt="Logo Einsten" />
+          </div>
+          <BrowserRouter>
+            <nav>
+              <ul ref={containerIcon}>
+                {objects.map((el, i) => {
+                  return (
+                    <>
+                      <li>
+                        <Link key={i} to={el.path}>
+                          <el.icon
+                            key={i}
+                            ref={refIcon}
+                            onClick={(e: MouseEvent) => {
+                              handleClick(e);
+                            }}
+                          />
+                        </Link>
+                      </li>
+                    </>
+                  );
+                })}
+              </ul>
+            </nav>
+          </BrowserRouter>
+        </Container>
+
+        <Content>awq</Content>
+      </div>
     </>
   );
 };
