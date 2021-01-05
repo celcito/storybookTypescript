@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import '../App.css';
 export interface CustomButtomProps {
-  icon?: HTMLImageElement;
+  icon?: any;
   onClick: () => void;
   text?: string;
   typeButtom?: string;
@@ -25,7 +25,7 @@ const white = '#fff';
 const danger = '#FF2424';
 const hardOnHold = '#FF8721';
 const onHold = '#FFB324';
-const light = '#F1F4F6';
+//const light = '#F1F4F6';
 const info = '#e3ebf2';
 const green = '#33AC2E';
 const fontColorPrymaryLight = '#6B7786';
@@ -57,7 +57,7 @@ const customType: Record<string, customTypeProps> = {
   primaryHighlight: {
     background: '#FFF',
     borderRadius: defaultBorderRadius,
-    color: light,
+    color: primary,
     border: `solid 1px ${primary}`,
     opacity: '0.8',
     font: 'normal normal medium 14px/22px Rubik',
