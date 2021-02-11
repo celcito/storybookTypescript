@@ -6,7 +6,7 @@ import { BrowserRouter, Link } from 'react-router-dom';
 import Logo from '../assets/icons/logo-einsten.svg';
 import Menu from '../assets/images/menu-hamburguer.png';
 
-const handleClick = (e) => {
+const handleClick = (e: any) => {
   console.log(e);
   console.log(refIcon.current);
 };

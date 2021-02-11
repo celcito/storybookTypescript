@@ -2,8 +2,10 @@
 
 exports[`Storyshots CustomButtom Danger 1`] = `
 <button
-  className="sc-bdfBwQ iFnLRh"
+  className="sc-bdfBwQ hNWLhT"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -20,8 +22,10 @@ exports[`Storyshots CustomButtom Danger 1`] = `
 
 exports[`Storyshots CustomButtom Danger Highlight 1`] = `
 <button
-  className="sc-bdfBwQ ktXTGi"
+  className="sc-bdfBwQ gSFmgk"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -38,8 +42,10 @@ exports[`Storyshots CustomButtom Danger Highlight 1`] = `
 
 exports[`Storyshots CustomButtom Danger Rounded 1`] = `
 <button
-  className="sc-bdfBwQ dbXrXa"
+  className="sc-bdfBwQ bUKPAx"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -56,8 +62,10 @@ exports[`Storyshots CustomButtom Danger Rounded 1`] = `
 
 exports[`Storyshots CustomButtom Green 1`] = `
 <button
-  className="sc-bdfBwQ jZyzTY"
+  className="sc-bdfBwQ haiiuS"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -78,8 +86,10 @@ exports[`Storyshots CustomButtom Green 1`] = `
 
 exports[`Storyshots CustomButtom Hard On Hold 1`] = `
 <button
-  className="sc-bdfBwQ mHAW"
+  className="sc-bdfBwQ uTiHV"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -94,10 +104,32 @@ exports[`Storyshots CustomButtom Hard On Hold 1`] = `
 </button>
 `;
 
+exports[`Storyshots CustomButtom Info 1`] = `
+<button
+  className="sc-bdfBwQ ldtDhq"
+  onClick={[Function]}
+  opacity="1"
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz czXwIi"
+  >
+     
+    <span>
+       
+      0990
+       
+    </span>
+  </div>
+</button>
+`;
+
 exports[`Storyshots CustomButtom Light 1`] = `
 <button
-  className="sc-bdfBwQ kLFMDi"
+  className="sc-bdfBwQ ljRBUR"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -114,8 +146,10 @@ exports[`Storyshots CustomButtom Light 1`] = `
 
 exports[`Storyshots CustomButtom Light Rounded 1`] = `
 <button
-  className="sc-bdfBwQ kzdNjA"
+  className="sc-bdfBwQ hBEONj"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -132,8 +166,10 @@ exports[`Storyshots CustomButtom Light Rounded 1`] = `
 
 exports[`Storyshots CustomButtom On Hold 1`] = `
 <button
-  className="sc-bdfBwQ dKLdlh"
+  className="sc-bdfBwQ krRdRS"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -150,15 +186,17 @@ exports[`Storyshots CustomButtom On Hold 1`] = `
 
 exports[`Storyshots CustomButtom Primary 1`] = `
 <button
-  className="sc-bdfBwQ hCAudx"
+  className="sc-bdfBwQ iaStPN"
   onClick={[Function]}
+  opacity="1"
+  size="large"
 >
   <div
     className="sc-gsTCUz czXwIi"
   >
     <img
       alt="Icon Plus"
-      src="plus.svg"
+      src="video.svg"
     />
      
     <span>
@@ -172,8 +210,10 @@ exports[`Storyshots CustomButtom Primary 1`] = `
 
 exports[`Storyshots CustomButtom Primary Highlight 1`] = `
 <button
-  className="sc-bdfBwQ gTVDBb"
+  className="sc-bdfBwQ hqILhg"
   onClick={[Function]}
+  opacity="1"
+  size="medium"
 >
   <div
     className="sc-gsTCUz czXwIi"
@@ -256,14 +296,18 @@ exports[`Storyshots CustomMenu Horizontal 1`] = `
   </div>
   <section
     className="sc-eCssSg kfUUyx"
-  />
+  >
+    <div>
+       teste0 
+    </div>
+  </section>
 </div>
 `;
 
 exports[`Storyshots DefaultMenu Vertical 1`] = `
 Array [
   <div
-    className="sc-gKsewC htBvqv"
+    className="sc-gKsewC fiigdW"
     id="hamburguer"
     onClick={[Function]}
   >
@@ -273,93 +317,106 @@ Array [
     />
   </div>,
   <div
-    className="sc-jSgupP eLWSzH"
-    id="menu"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
   >
     <div
-      className="default-logo"
+      className="sc-jSgupP kICXO"
+      id="menu"
     >
-      <img
-        alt="Logo Einsten"
-        src="logo-einsten.svg"
-      />
+      <div
+        className="default-logo"
+      >
+        <img
+          alt="Logo Einsten"
+          src="logo-einsten.svg"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="/home"
+              onClick={[Function]}
+            >
+              <svg
+                onClick={[Function]}
+              >
+                acionamentos.svg
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/home"
+              onClick={[Function]}
+            >
+              <svg
+                onClick={[Function]}
+              >
+                agendamentos.svg
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/home"
+              onClick={[Function]}
+            >
+              <svg
+                onClick={[Function]}
+              >
+                hitstorico.svg
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/home"
+              onClick={[Function]}
+            >
+              <svg
+                onClick={[Function]}
+              >
+                support.svg
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/home"
+              onClick={[Function]}
+            >
+              <svg
+                onClick={[Function]}
+              >
+                activity.svg
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <svg
+                onClick={[Function]}
+              >
+                gerenciar_cancelamentos.svg
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="/home"
-            onClick={[Function]}
-          >
-            <svg
-              onClick={[Function]}
-            >
-              acionamentos.svg
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="/home"
-            onClick={[Function]}
-          >
-            <svg
-              onClick={[Function]}
-            >
-              agendamentos.svg
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="/home"
-            onClick={[Function]}
-          >
-            <svg
-              onClick={[Function]}
-            >
-              hitstorico.svg
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="/home"
-            onClick={[Function]}
-          >
-            <svg
-              onClick={[Function]}
-            >
-              support.svg
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="/home"
-            onClick={[Function]}
-          >
-            <svg
-              onClick={[Function]}
-            >
-              activity.svg
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            onClick={[Function]}
-          >
-            <svg
-              onClick={[Function]}
-            >
-              gerenciar_cancelamentos.svg
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <section
+      className="sc-iBPRYJ eCNljB"
+    >
+      awq
+    </section>
   </div>,
 ]
 `;

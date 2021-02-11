@@ -7,6 +7,7 @@ export interface CustomButtomProps {
   text?: string;
   typeButtom?: string;
   size?: string;
+  disable?: boolean;
 }
 
 export interface customTypeProps {
@@ -191,6 +192,7 @@ const Button = styled.button<{ typeButtom: string; size: string }>`
         : '15px'};
 
     padding-bottom: 1px;
+    opacity: ${(props) => props.opacity};
   }
 `;
 const Container = styled.div`
@@ -200,15 +202,29 @@ const Container = styled.div`
   }
 `;
 
+const handleClick = (e: any) => {
+  if (typeof e === 'function') e();
+};
+
 const CustomButtom: FC<CustomButtomProps> = ({
   typeButtom = 'primary',
   onClick,
   icon,
   size = 'small',
   text,
+  disable,
+  opacity,
 }: CustomButtomProps) => {
   return (
-    <Button typeButtom={typeButtom} size={size} onClick={onClick}>
+    <Button
+      disabled={disable}
+      opacity={disable ? '0.4' : '1'}
+      typeButtom={typeButtom}
+      size={size}
+      onClick={() => {
+        handleClick(onClick);
+      }}
+    >
       <Container>
         {icon} <span> {text} </span>
       </Container>

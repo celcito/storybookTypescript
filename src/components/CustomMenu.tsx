@@ -28,7 +28,7 @@ const handleOver = (e: any, index: number) => {
 };
 
 const changeClass = (e: any, index: number, classChange: string) => {
-  const containerUlCurrent = containerUl.current;
+  const containerUlCurrent = containerUl?.current;
   const childNodes: any = containerUlCurrent?.childNodes;
   const el: any = document.getElementById(`ele${index}`);
 

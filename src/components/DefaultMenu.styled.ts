@@ -4,6 +4,9 @@ import { customDropShadow } from '../assets/styles/mixins';
 export const Container = styled.div<{ menuIsOpen: boolean }>`
   
 ${customDropShadow('1px 4px 11px 6px #c2c2c2')}
+img {
+  width: 30px;
+}
     height: 1000px;
     ${(props) =>
       !props.menuIsOpen &&
@@ -81,6 +84,10 @@ export const ContainerHamburguer = styled.div<{ menuIsOpen: boolean }>`
   }
   @media (max-width: 601px) {
     display: block;
+  }
+
+  img {
+    width: 30px;
   }
 `;
 export const Content = styled.section`
