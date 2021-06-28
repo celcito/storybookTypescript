@@ -2,13 +2,12 @@
 
 exports[`Storyshots CustomButtom Danger 1`] = `
 <button
-  className="sc-bdfBwQ hNWLhT"
+  className="sc-bdfBwQ bUMBdY"
   onClick={[Function]}
-  opacity="1"
   size="medium"
 >
   <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
   >
      
     <span>
@@ -20,20 +19,38 @@ exports[`Storyshots CustomButtom Danger 1`] = `
 </button>
 `;
 
-exports[`Storyshots CustomButtom Danger Highlight 1`] = `
+exports[`Storyshots CustomButtom Danger Outline 1`] = `
 <button
-  className="sc-bdfBwQ gSFmgk"
+  className="sc-bdfBwQ jbuITX"
   onClick={[Function]}
-  opacity="1"
   size="medium"
 >
   <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
   >
      
     <span>
        
-      7 min
+      danger
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Danger Outline Rounded 1`] = `
+<button
+  className="sc-bdfBwQ eDURIS"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      danger
        
     </span>
   </div>
@@ -42,57 +59,12 @@ exports[`Storyshots CustomButtom Danger Highlight 1`] = `
 
 exports[`Storyshots CustomButtom Danger Rounded 1`] = `
 <button
-  className="sc-bdfBwQ bUKPAx"
+  className="sc-bdfBwQ gDHalZ"
   onClick={[Function]}
-  opacity="1"
   size="medium"
 >
   <div
-    className="sc-gsTCUz czXwIi"
-  >
-     
-    <span>
-       
-      7 min
-       
-    </span>
-  </div>
-</button>
-`;
-
-exports[`Storyshots CustomButtom Green 1`] = `
-<button
-  className="sc-bdfBwQ haiiuS"
-  onClick={[Function]}
-  opacity="1"
-  size="medium"
->
-  <div
-    className="sc-gsTCUz czXwIi"
-  >
-    <img
-      alt="Icon Video"
-      src="video.svg"
-    />
-     
-    <span>
-       
-      video conferencia
-       
-    </span>
-  </div>
-</button>
-`;
-
-exports[`Storyshots CustomButtom Hard On Hold 1`] = `
-<button
-  className="sc-bdfBwQ uTiHV"
-  onClick={[Function]}
-  opacity="1"
-  size="medium"
->
-  <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
   >
      
     <span>
@@ -106,13 +78,69 @@ exports[`Storyshots CustomButtom Hard On Hold 1`] = `
 
 exports[`Storyshots CustomButtom Info 1`] = `
 <button
-  className="sc-bdfBwQ ldtDhq"
+  className="sc-bdfBwQ fGIRkp"
   onClick={[Function]}
-  opacity="1"
   size="medium"
 >
   <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      0990
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Info Outline 1`] = `
+<button
+  className="sc-bdfBwQ pwXIu"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      0990
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Info Rounded 1`] = `
+<button
+  className="sc-bdfBwQ ftuCjI"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      0990
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Info Rounded Outline Rounded 1`] = `
+<button
+  className="sc-bdfBwQ kjmnSD"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
   >
      
     <span>
@@ -126,13 +154,12 @@ exports[`Storyshots CustomButtom Info 1`] = `
 
 exports[`Storyshots CustomButtom Light 1`] = `
 <button
-  className="sc-bdfBwQ ljRBUR"
+  className="sc-bdfBwQ hZwFO"
   onClick={[Function]}
-  opacity="1"
   size="medium"
 >
   <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
   >
      
     <span>
@@ -146,33 +173,12 @@ exports[`Storyshots CustomButtom Light 1`] = `
 
 exports[`Storyshots CustomButtom Light Rounded 1`] = `
 <button
-  className="sc-bdfBwQ hBEONj"
+  className="sc-bdfBwQ fxqlGv"
   onClick={[Function]}
-  opacity="1"
   size="medium"
 >
   <div
-    className="sc-gsTCUz czXwIi"
-  >
-     
-    <span>
-       
-      7 min
-       
-    </span>
-  </div>
-</button>
-`;
-
-exports[`Storyshots CustomButtom On Hold 1`] = `
-<button
-  className="sc-bdfBwQ krRdRS"
-  onClick={[Function]}
-  opacity="1"
-  size="medium"
->
-  <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
   >
      
     <span>
@@ -186,13 +192,12 @@ exports[`Storyshots CustomButtom On Hold 1`] = `
 
 exports[`Storyshots CustomButtom Primary 1`] = `
 <button
-  className="sc-bdfBwQ iaStPN"
+  className="sc-bdfBwQ liuNDO"
   onClick={[Function]}
-  opacity="1"
   size="large"
 >
   <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
   >
     <img
       alt="Icon Plus"
@@ -208,15 +213,75 @@ exports[`Storyshots CustomButtom Primary 1`] = `
 </button>
 `;
 
-exports[`Storyshots CustomButtom Primary Highlight 1`] = `
+exports[`Storyshots CustomButtom Primary Outline 1`] = `
 <button
-  className="sc-bdfBwQ hqILhg"
+  className="sc-bdfBwQ iEAToV"
   onClick={[Function]}
-  opacity="1"
+  size="large"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      Primary
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Primary Outline Rounded 1`] = `
+<button
+  className="sc-bdfBwQ brEYoU"
+  onClick={[Function]}
+  size="large"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      Primary
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Primary Rounded 1`] = `
+<button
+  className="sc-bdfBwQ hmgyKD"
+  onClick={[Function]}
+  size="large"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+    <img
+      alt="Icon Plus"
+      src="video.svg"
+    />
+     
+    <span>
+       
+      Primary
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Primary Warning 1`] = `
+<button
+  className="sc-bdfBwQ cRYUcN"
+  onClick={[Function]}
   size="medium"
 >
   <div
-    className="sc-gsTCUz czXwIi"
+    className="sc-gsTCUz htGIop"
   >
      
     <span>
@@ -228,12 +293,237 @@ exports[`Storyshots CustomButtom Primary Highlight 1`] = `
 </button>
 `;
 
+exports[`Storyshots CustomButtom Primary Warning Outline 1`] = `
+<button
+  className="sc-bdfBwQ VUjkD"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Primary Warning Outline Rounded 1`] = `
+<button
+  className="sc-bdfBwQ ikeVLq"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Primary Warning Rounded 1`] = `
+<button
+  className="sc-bdfBwQ jrwqOD"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Secondary Warning 1`] = `
+<button
+  className="sc-bdfBwQ egpvna"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Secondary Warning Outline 1`] = `
+<button
+  className="sc-bdfBwQ iTuNfb"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Secondary Warning Outline Rounded 1`] = `
+<button
+  className="sc-bdfBwQ kPtkjq"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Secondary Warning Rounded 1`] = `
+<button
+  className="sc-bdfBwQ RdtED"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+     
+    <span>
+       
+      7 min
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Success 1`] = `
+<button
+  className="sc-bdfBwQ gzwEpF"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+    <img
+      alt="Icon Video"
+      src="video.svg"
+    />
+     
+    <span>
+       
+      video conferencia
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Success Outline 1`] = `
+<button
+  className="sc-bdfBwQ WwQFj"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+    <img
+      alt="Icon Video"
+      src="video.svg"
+    />
+     
+    <span>
+       
+      video conferencia
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Success Outline Rounded 1`] = `
+<button
+  className="sc-bdfBwQ iCofPG"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+    <img
+      alt="Icon Video"
+      src="video.svg"
+    />
+     
+    <span>
+       
+      video conferencia
+       
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Storyshots CustomButtom Success Rounded 1`] = `
+<button
+  className="sc-bdfBwQ kvBtws"
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="sc-gsTCUz htGIop"
+  >
+    <img
+      alt="Icon Video"
+      src="video.svg"
+    />
+     
+    <span>
+       
+      video conferencia
+       
+    </span>
+  </div>
+</button>
+`;
+
 exports[`Storyshots CustomMenu Horizontal 1`] = `
 <div
   className="sc-dlfnbm fmQbiS"
 >
   <div
-    className="sc-hKgILt bPiKPM"
+    className="sc-hKgILt hbnhTJ"
   >
     <nav>
       <ul>

@@ -1,8 +1,7 @@
-// export const parameters = {
-//   actions: { argTypesRegex: "^on[A-Z].*" },
-// }
-
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
+import GlobalStyles from '../src/assets/styles/globalStyles';
+
+import { StoryContext, StoryGetter, StoryWrapper } from '@storybook/addons';
 
 const customViewports = {
   kindleFire2: {

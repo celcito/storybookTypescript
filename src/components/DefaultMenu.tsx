@@ -2,9 +2,10 @@ import React, { useState, useEffect, FC, createRef } from 'react';
 import '../App.css';
 import { Container, ContainerHamburguer, Content } from './DefaultMenu.styled';
 import { BrowserRouter, Link } from 'react-router-dom';
-//import { uuid } from 'uuidv4';
+import { uuid } from 'uuidv4';
 import Logo from '../assets/icons/logo-einsten.svg';
-import Menu from '../assets/images/menu-hamburguer.png';
+//import Menu from '../assets/images/menu-hamburguer.png';
+import Burguer from './Burguer';
 
 const handleClick = (e: any) => {
   console.log(e);
@@ -28,11 +29,11 @@ export interface DefaultObjectsProps {
 
 const DefaultMenu: FC<DefaultObjectsProps> = ({ objects }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 600) {
         setMenuIsOpen(false);
-        console.log('false');
       } else {
         setMenuIsOpen(true);
       }
@@ -52,8 +53,9 @@ const DefaultMenu: FC<DefaultObjectsProps> = ({ objects }) => {
         onClick={togleMenu}
         id="hamburguer"
       >
-        <img src={Menu} alt="Menu hamburguer" />
+        <Burguer open={open} size="small" setOpen={setOpen} />
       </ContainerHamburguer>
+
       <div style={{ display: 'flex' }}>
         <Container menuIsOpen={menuIsOpen} id="menu">
           <div className="default-logo">
@@ -65,10 +67,10 @@ const DefaultMenu: FC<DefaultObjectsProps> = ({ objects }) => {
                 {objects.map((el, i) => {
                   return (
                     <>
-                      <li>
-                        <Link key={i} to={el.path}>
+                      <li key={uuid}>
+                        <Link key={uuid} to={el.path}>
                           <el.icon
-                            key={i}
+                            key={uuid}
                             ref={refIcon}
                             onClick={(e: MouseEvent) => {
                               handleClick(e);

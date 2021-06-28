@@ -1,31 +1,40 @@
 import styled from 'styled-components';
-
+//import { customDropShadow } from '../assets/styles/mixins';
 export const fontFamily = "'Rubik', sans-serif";
+
 export const Container = styled.div`
   display: flex;
   width: 900px;
   max-width: 1000px;
 `;
 export const ContainerMenu = styled.div`
-  width: 212px;
+  display: none;
+  justify-content: center;
   height: 250px;
   display: flex;
   background: #fff;
   font-family: 'rubikregular', sans-serif;
 
+  nav {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+  }
   ul {
     margin: 0;
+    width: 100%;
     padding-top: 10px;
   }
 
   ul li {
     display: flex;
-    margin-left: 10px;
-    width: 200px;
+    justify-content: center;
+    align-items: center;
     height: 37px;
     margin-bottom: 2px;
     background: #fff;
-    align-items: center;
+    width: 100%;
+
     font-family: ${fontFamily};
     font-size: 14px;
     color: #6b7786;
@@ -33,7 +42,6 @@ export const ContainerMenu = styled.div`
   }
 
   ul li span {
-    padding-left: 10px;
   }
 
   .selected {
@@ -53,3 +61,5 @@ export const Content = styled.section`
   background: aliceblue;
   margin-left: 30px;
 `;
+
+// ${customDropShadow('1px 4px 11px 6px #c2c2c2')}
